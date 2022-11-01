@@ -12,5 +12,9 @@ node {
 	stage('git clone') {
 	    git branch: 'main', credentialsId: 'pushpa', url: 'https://github.com/pushpa1998r/sss.git'
 	}
+	stage('maven package') {
+	    sh 'mvn package'
+	}
+	
     
 }
