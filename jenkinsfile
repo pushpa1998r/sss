@@ -1,0 +1,14 @@
+node {
+    
+    stage ('maven version') {
+	   sh 'mvn --version' 
+	}
+	stage ('Java version') {
+	   sh 'java --version' 
+	}
+	stage ('git version') {
+	    sh 'git --version'
+    }
+    
+}
+
